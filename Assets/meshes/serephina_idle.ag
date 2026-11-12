@@ -1,0 +1,619 @@
+{
+  "Version": 1,
+  "nodes": [
+    {
+      "_class": "PoseResultNode",
+      "Pose": {
+        "Identifier": "37d1b090-d2c7-4a62-8f66-6e2fbfd1c42e",
+        "Output": "Result"
+      },
+      "Identifier": "68e6deae-e18e-45be-926b-267e3de00d12",
+      "Position": "336,24",
+      "HandleOffsets": {}
+    },
+    {
+      "_class": "StateMachineNode",
+      "States": [
+        {
+          "Name": "Locomotion",
+          "Type": "BlendTree",
+          "Events": [],
+          "TimedEvents": [],
+          "UseActualElapsedTimeInStateForTimedEvents": false,
+          "TransitionOrder": [],
+          "Position": "-48,-16",
+          "Graph": {
+            "Version": 1,
+            "nodes": [
+              {
+                "_class": "PoseResultNode",
+                "Pose": {
+                  "Identifier": "0e0954df-952a-49f4-abcd-5d2e8c2f6572",
+                  "Output": "Result"
+                },
+                "Identifier": "1e08985e-e0fc-435e-b1cb-587a4020d8f4",
+                "Position": "396,0",
+                "HandleOffsets": {}
+              },
+              {
+                "_class": "Blend2DNode",
+                "X": {
+                  "Identifier": "e737de98-4dd0-4c37-8f8c-ae5cb221aaf2",
+                  "Output": "Result"
+                },
+                "Y": {
+                  "Identifier": "c303b983-5876-475c-8979-4469204894ab",
+                  "Output": "Result"
+                },
+                "Points": [
+                  {
+                    "Name": "walk_f",
+                    "Position": "0,1",
+                    "Graph": {
+                      "Version": 1,
+                      "nodes": [
+                        {
+                          "_class": "PoseResultNode",
+                          "Pose": {
+                            "Identifier": "f22eda97-7bb7-494d-a23b-504e2b72f43d",
+                            "Output": "Result"
+                          },
+                          "Identifier": "f0a43093-264b-4309-a2b1-8ce713cd7d90",
+                          "Position": "396,0",
+                          "HandleOffsets": {}
+                        },
+                        {
+                          "_class": "AnimationClipNode",
+                          "Loop": true,
+                          "SampleRootMotion": true,
+                          "GraphEvents": [],
+                          "PlayInReverse": {
+                            "Identifier": null,
+                            "Output": null
+                          },
+                          "ResetTime": {
+                            "Identifier": null,
+                            "Output": null
+                          },
+                          "DefaultVariationData": {
+                            "AnimationName": "meshes/animations/serephina_walk_f.anim",
+                            "SpeedMultiplier": 1,
+                            "StartSyncEventOffset": 0
+                          },
+                          "Overrides": [],
+                          "Identifier": "f22eda97-7bb7-494d-a23b-504e2b72f43d",
+                          "Position": "84,0",
+                          "HandleOffsets": {}
+                        }
+                      ]
+                    },
+                    "Input": {
+                      "Identifier": null,
+                      "Output": null
+                    }
+                  },
+                  {
+                    "Name": "walk_l",
+                    "Position": "-1,0",
+                    "Graph": {
+                      "Version": 1,
+                      "nodes": [
+                        {
+                          "_class": "PoseResultNode",
+                          "Pose": {
+                            "Identifier": "16ad9a42-58d1-4a5c-a7fd-80638126b6d5",
+                            "Output": "Result"
+                          },
+                          "Identifier": "3fab809a-716a-45cb-94fc-12480db20aa6",
+                          "Position": "396,0",
+                          "HandleOffsets": {}
+                        },
+                        {
+                          "_class": "AnimationClipNode",
+                          "Loop": true,
+                          "SampleRootMotion": true,
+                          "GraphEvents": [],
+                          "PlayInReverse": {
+                            "Identifier": null,
+                            "Output": null
+                          },
+                          "ResetTime": {
+                            "Identifier": null,
+                            "Output": null
+                          },
+                          "DefaultVariationData": {
+                            "AnimationName": "meshes/animations/serephina_walk_lf.anim",
+                            "SpeedMultiplier": 1,
+                            "StartSyncEventOffset": 0
+                          },
+                          "Overrides": [],
+                          "Identifier": "16ad9a42-58d1-4a5c-a7fd-80638126b6d5",
+                          "Position": "0,0",
+                          "HandleOffsets": {}
+                        }
+                      ]
+                    },
+                    "Input": {
+                      "Identifier": null,
+                      "Output": null
+                    }
+                  },
+                  {
+                    "Name": "walk_r",
+                    "Position": "1,0",
+                    "Graph": {
+                      "Version": 1,
+                      "nodes": [
+                        {
+                          "_class": "PoseResultNode",
+                          "Pose": {
+                            "Identifier": "d1811cb5-821f-4c8c-beff-6578c27f744a",
+                            "Output": "Result"
+                          },
+                          "Identifier": "bf211393-0526-40bc-a258-7734c23aa573",
+                          "Position": "396,0",
+                          "HandleOffsets": {}
+                        },
+                        {
+                          "_class": "AnimationClipNode",
+                          "Loop": true,
+                          "SampleRootMotion": true,
+                          "GraphEvents": [],
+                          "PlayInReverse": {
+                            "Identifier": null,
+                            "Output": null
+                          },
+                          "ResetTime": {
+                            "Identifier": null,
+                            "Output": null
+                          },
+                          "DefaultVariationData": {
+                            "AnimationName": "meshes/animations/serephina_walk_rf.anim",
+                            "SpeedMultiplier": 1,
+                            "StartSyncEventOffset": 0
+                          },
+                          "Overrides": [],
+                          "Identifier": "d1811cb5-821f-4c8c-beff-6578c27f744a",
+                          "Position": "48,0",
+                          "HandleOffsets": {}
+                        }
+                      ]
+                    },
+                    "Input": {
+                      "Identifier": null,
+                      "Output": null
+                    }
+                  },
+                  {
+                    "Name": "walk_b",
+                    "Position": "0,-1",
+                    "Graph": {
+                      "Version": 1,
+                      "nodes": [
+                        {
+                          "_class": "PoseResultNode",
+                          "Pose": {
+                            "Identifier": "dbfd6ead-49ca-4ca5-8bcc-79731b326ded",
+                            "Output": "Result"
+                          },
+                          "Identifier": "60602d39-ed35-412c-9e6f-762282427e41",
+                          "Position": "396,0",
+                          "HandleOffsets": {}
+                        },
+                        {
+                          "_class": "AnimationClipNode",
+                          "Loop": true,
+                          "SampleRootMotion": true,
+                          "GraphEvents": [],
+                          "PlayInReverse": {
+                            "Identifier": null,
+                            "Output": null
+                          },
+                          "ResetTime": {
+                            "Identifier": null,
+                            "Output": null
+                          },
+                          "DefaultVariationData": {
+                            "AnimationName": "meshes/animations/serephina_walk_b.anim",
+                            "SpeedMultiplier": 1,
+                            "StartSyncEventOffset": 0
+                          },
+                          "Overrides": [],
+                          "Identifier": "dbfd6ead-49ca-4ca5-8bcc-79731b326ded",
+                          "Position": "84,0",
+                          "HandleOffsets": {}
+                        }
+                      ]
+                    },
+                    "Input": {
+                      "Identifier": null,
+                      "Output": null
+                    }
+                  },
+                  {
+                    "Name": "Idle",
+                    "Position": "-0,-0",
+                    "Graph": {
+                      "Version": 1,
+                      "nodes": [
+                        {
+                          "_class": "PoseResultNode",
+                          "Pose": {
+                            "Identifier": "1f88d863-26f7-47da-8838-ef67cec72376",
+                            "Output": "Result"
+                          },
+                          "Identifier": "cd1907e2-6a37-4dd3-8678-585815d1180e",
+                          "Position": "396,0",
+                          "HandleOffsets": {}
+                        },
+                        {
+                          "_class": "AnimationClipNode",
+                          "Loop": true,
+                          "SampleRootMotion": true,
+                          "GraphEvents": [],
+                          "PlayInReverse": {
+                            "Identifier": null,
+                            "Output": null
+                          },
+                          "ResetTime": {
+                            "Identifier": null,
+                            "Output": null
+                          },
+                          "DefaultVariationData": {
+                            "AnimationName": "meshes/animations/serephina_idle.anim",
+                            "SpeedMultiplier": 1,
+                            "StartSyncEventOffset": 0
+                          },
+                          "Overrides": [],
+                          "Identifier": "1f88d863-26f7-47da-8838-ef67cec72376",
+                          "Position": "72,0",
+                          "HandleOffsets": {}
+                        }
+                      ]
+                    },
+                    "Input": {
+                      "Identifier": null,
+                      "Output": null
+                    }
+                  }
+                ],
+                "Loop": true,
+                "Identifier": "0e0954df-952a-49f4-abcd-5d2e8c2f6572",
+                "Position": "-72,120",
+                "HandleOffsets": {}
+              },
+              {
+                "_class": "FloatParameterReferenceNode",
+                "ParameterIdentifier": "ac55f0d9-e477-48aa-93d7-0c81d755271c",
+                "ParameterName": "move_y",
+                "Identifier": "1437d170-9495-450e-9649-b083216bd5f7",
+                "Position": "-648,36",
+                "HandleOffsets": {}
+              },
+              {
+                "_class": "FloatParameterReferenceNode",
+                "ParameterIdentifier": "f4c6fe11-bf1c-491a-a6b1-5d324be1413e",
+                "ParameterName": "move_x",
+                "Identifier": "53f8c3e7-fbdb-40a8-87b4-00116e780ff9",
+                "Position": "-648,204",
+                "HandleOffsets": {}
+              },
+              {
+                "_class": "FloatMathNode",
+                "A": {
+                  "Identifier": "1437d170-9495-450e-9649-b083216bd5f7",
+                  "Output": "Value"
+                },
+                "B": {
+                  "Identifier": null,
+                  "Output": null
+                },
+                "Operator": "Divide",
+                "ValueB": 54,
+                "AbsoluteResult": false,
+                "NegateResult": false,
+                "Identifier": "e737de98-4dd0-4c37-8f8c-ae5cb221aaf2",
+                "Position": "-384,36",
+                "HandleOffsets": {}
+              },
+              {
+                "_class": "FloatMathNode",
+                "A": {
+                  "Identifier": "53f8c3e7-fbdb-40a8-87b4-00116e780ff9",
+                  "Output": "Value"
+                },
+                "B": {
+                  "Identifier": null,
+                  "Output": null
+                },
+                "Operator": "Divide",
+                "ValueB": 54,
+                "AbsoluteResult": false,
+                "NegateResult": false,
+                "Identifier": "c303b983-5876-475c-8979-4469204894ab",
+                "Position": "-384,204",
+                "HandleOffsets": {}
+              }
+            ]
+          },
+          "LayerGraph": {
+            "Version": 1,
+            "nodes": [
+              {
+                "_class": "StateLayerDataNode",
+                "LayerWeight": {
+                  "Identifier": null,
+                  "Output": null
+                },
+                "RootMotionWeight": {
+                  "Identifier": null,
+                  "Output": null
+                },
+                "BoneMask": {
+                  "Identifier": null,
+                  "Output": null
+                },
+                "Identifier": "59ec0e3c-5854-48af-93a6-d69059cd45ce",
+                "Position": "396,0",
+                "HandleOffsets": {}
+              }
+            ],
+            "Kind": "LayerData"
+          }
+        }
+      ],
+      "Conduits": [],
+      "GlobalGraph": {
+        "Version": 1,
+        "nodes": [
+          {
+            "_class": "GlobalTransitionNode",
+            "StateName": "Locomotion",
+            "Condition": {
+              "Identifier": null,
+              "Output": null
+            },
+            "DurationOverride": {
+              "Identifier": null,
+              "Output": null
+            },
+            "TimeOffsetOverride": {
+              "Identifier": null,
+              "Output": null
+            },
+            "StartBoneMask": {
+              "Identifier": null,
+              "Output": null
+            },
+            "TargetSyncID": {
+              "Identifier": null,
+              "Output": null
+            },
+            "TransitionName": "Transition",
+            "Duration": 0.2,
+            "TimeMatch": "None",
+            "TimeOffset": 0,
+            "BlendWeightEasing": "Linear",
+            "RootMotionBlend": "Blend",
+            "ClampDurationToSource": false,
+            "CanBeForced": false,
+            "BoneMaskBlendInTimePercentage": 0.33,
+            "Identifier": "66213d14-f8d6-43c3-9b26-51e2eeb2eb38",
+            "Position": "400,0",
+            "HandleOffsets": {}
+          }
+        ],
+        "Kind": "GlobalTransitions"
+      },
+      "EntryGraph": {
+        "Version": 1,
+        "nodes": [
+          {
+            "_class": "EntryStateOverrideConditionsNode",
+            "States": [
+              "Locomotion"
+            ],
+            "Conditions": [
+              {
+                "Identifier": null,
+                "Output": null
+              }
+            ],
+            "Identifier": "1111afc7-5f4f-40cf-a28b-d2efd8fd99c1",
+            "Position": "396,0",
+            "HandleOffsets": {}
+          }
+        ],
+        "Kind": "EntryOverrides"
+      },
+      "DefaultState": "",
+      "DefaultStateIndex": 0,
+      "Identifier": "44aab919-2bf0-4361-bf80-d9ab164341b9",
+      "Position": "-276,-108",
+      "HandleOffsets": {}
+    },
+    {
+      "_class": "TwoBoneIKNode",
+      "Input": {
+        "Identifier": "44aab919-2bf0-4361-bf80-d9ab164341b9",
+        "Output": "Result"
+      },
+      "EffectorTarget": {
+        "Identifier": "10d52578-2975-42fd-bc7b-13ed4460d5f3",
+        "Output": "Value"
+      },
+      "Enable": {
+        "Identifier": null,
+        "Output": null
+      },
+      "Weight": {
+        "Identifier": "1335ee83-ef98-4f40-83e6-48c2e06b0757",
+        "Output": "Value"
+      },
+      "BlendMode": "Effector",
+      "IsTargetInWorldSpace": true,
+      "ReferencePoseTwistWeight": 1,
+      "DefaultVariationData": {
+        "EffectorBone": "hand_L",
+        "BlendTime": 0.5
+      },
+      "Overrides": [],
+      "Identifier": "37d1b090-d2c7-4a62-8f66-6e2fbfd1c42e",
+      "Position": "60,24",
+      "HandleOffsets": {}
+    },
+    {
+      "_class": "TargetParameterReferenceNode",
+      "ParameterIdentifier": "43101f95-e834-42ae-8cc0-b70940c83bfd",
+      "ParameterName": "LeftHandTarget",
+      "Identifier": "10d52578-2975-42fd-bc7b-13ed4460d5f3",
+      "Position": "-276,-36",
+      "HandleOffsets": {}
+    },
+    {
+      "_class": "FloatParameterReferenceNode",
+      "ParameterIdentifier": "ad88d3fc-de99-4484-8785-aaa51fe08c07",
+      "ParameterName": "LeftHandIK_Weight",
+      "Identifier": "1335ee83-ef98-4f40-83e6-48c2e06b0757",
+      "Position": "-276,144",
+      "HandleOffsets": {}
+    }
+  ],
+  "Model": "meshes/serephina_idle.vmdl",
+  "Skeleton": "meshes/serephina_idle.skel",
+  "parameters": [
+    {
+      "Identifier": "38d6b623-42e1-4ae9-8068-fdf7b9d4754b",
+      "Type": "Bool",
+      "Name": "IsWalking",
+      "Group": "",
+      "RuntimeDefaultFloat": 0,
+      "RuntimeDefaultBool": false,
+      "RuntimeDefaultID": "",
+      "RuntimeDefaultVector": "0,0,0",
+      "DefaultFloat": 0,
+      "Min": 0,
+      "Max": 1,
+      "DefaultBool": false,
+      "DefaultID": "",
+      "EnumTypeName": "",
+      "ExpectedValues": [],
+      "ResolvedOptions": [],
+      "DefaultVector": "0,0,0",
+      "PreviewStartTargetIsSet": false,
+      "PreviewStartTargetIsBone": false,
+      "PreviewStartBone": ""
+    },
+    {
+      "Identifier": "f4c6fe11-bf1c-491a-a6b1-5d324be1413e",
+      "Type": "Float",
+      "Name": "move_x",
+      "Group": "",
+      "RuntimeDefaultFloat": 0,
+      "RuntimeDefaultBool": false,
+      "RuntimeDefaultID": "",
+      "RuntimeDefaultVector": "0,0,0",
+      "DefaultFloat": 0,
+      "Min": 0,
+      "Max": 1,
+      "DefaultBool": false,
+      "DefaultID": "",
+      "EnumTypeName": "",
+      "ExpectedValues": [],
+      "ResolvedOptions": [],
+      "DefaultVector": "0,0,0",
+      "PreviewStartTargetIsSet": false,
+      "PreviewStartTargetIsBone": false,
+      "PreviewStartBone": ""
+    },
+    {
+      "Identifier": "ac55f0d9-e477-48aa-93d7-0c81d755271c",
+      "Type": "Float",
+      "Name": "move_y",
+      "Group": "",
+      "RuntimeDefaultFloat": 0,
+      "RuntimeDefaultBool": false,
+      "RuntimeDefaultID": "",
+      "RuntimeDefaultVector": "0,0,0",
+      "DefaultFloat": 0,
+      "Min": 0,
+      "Max": 1,
+      "DefaultBool": false,
+      "DefaultID": "",
+      "EnumTypeName": "",
+      "ExpectedValues": [],
+      "ResolvedOptions": [],
+      "DefaultVector": "0,0,0",
+      "PreviewStartTargetIsSet": false,
+      "PreviewStartTargetIsBone": false,
+      "PreviewStartBone": ""
+    },
+    {
+      "Identifier": "9ae063e0-d390-4033-9213-05d73bf7c431",
+      "Type": "Float",
+      "Name": "move-z",
+      "Group": "",
+      "RuntimeDefaultFloat": 0,
+      "RuntimeDefaultBool": false,
+      "RuntimeDefaultID": "",
+      "RuntimeDefaultVector": "0,0,0",
+      "DefaultFloat": 0,
+      "Min": 0,
+      "Max": 1,
+      "DefaultBool": false,
+      "DefaultID": "",
+      "EnumTypeName": "",
+      "ExpectedValues": [],
+      "ResolvedOptions": [],
+      "DefaultVector": "0,0,0",
+      "PreviewStartTargetIsSet": false,
+      "PreviewStartTargetIsBone": false,
+      "PreviewStartBone": ""
+    },
+    {
+      "Identifier": "43101f95-e834-42ae-8cc0-b70940c83bfd",
+      "Type": "Target",
+      "Name": "LeftHandTarget",
+      "Group": "",
+      "RuntimeDefaultFloat": 0,
+      "RuntimeDefaultBool": false,
+      "RuntimeDefaultID": "",
+      "RuntimeDefaultVector": "0,0,0",
+      "DefaultFloat": 0,
+      "Min": 0,
+      "Max": 1,
+      "DefaultBool": false,
+      "DefaultID": "",
+      "EnumTypeName": "",
+      "ExpectedValues": [],
+      "ResolvedOptions": [],
+      "DefaultVector": "0,0,0",
+      "PreviewStartTargetIsSet": false,
+      "PreviewStartTargetIsBone": false,
+      "PreviewStartBone": ""
+    },
+    {
+      "Identifier": "ad88d3fc-de99-4484-8785-aaa51fe08c07",
+      "Type": "Float",
+      "Name": "LeftHandIK_Weight",
+      "Group": "",
+      "RuntimeDefaultFloat": 0,
+      "RuntimeDefaultBool": false,
+      "RuntimeDefaultID": "",
+      "RuntimeDefaultVector": "0,0,0",
+      "DefaultFloat": 0,
+      "Min": 0,
+      "Max": 1,
+      "DefaultBool": false,
+      "DefaultID": "",
+      "EnumTypeName": "",
+      "ExpectedValues": [],
+      "ResolvedOptions": [],
+      "DefaultVector": "0,0,0",
+      "PreviewStartTargetIsSet": false,
+      "PreviewStartTargetIsBone": false,
+      "PreviewStartBone": ""
+    }
+  ],
+  "virtualParameters": []
+}

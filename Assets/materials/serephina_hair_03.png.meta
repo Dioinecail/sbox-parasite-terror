@@ -1,0 +1,34 @@
+{
+  "guid": "c42ebc23-bb54-4df6-b46f-9df3d897a491",
+  "clampu": false,
+  "clampv": false,
+  "clampw": false,
+  "nolod": false,
+  "nomip": false,
+  "nocompress": true,
+  "brightness": 1,
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "Serephina Hair 03",
+      "Type": "jpg",
+      "Org": "local",
+      "Ident": "serephina_hair_03",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PublishUsedAssetsOnly": false,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "AI": {
+        "EnableMcpCommunication": true
+      },
+      "Metadata": {
+        "SingleAssetSource": "meshes/serephina_hair_03.png"
+      }
+    },
+    "HammerAutoPackageReferences": null
+  }
+}
